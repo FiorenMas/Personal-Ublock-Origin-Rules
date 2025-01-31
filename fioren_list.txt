@@ -1,0 +1,74 @@
+! Title: Fioren's List
+! Description: Personal uBlock Origin List
+! Expires: 12 hours
+! Last modified: 2025.02.01.1
+! Homepage: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules
+! License: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/blob/main/LICENSE
+!
+! GitHub issues: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/issues
+! GitHub pull requests: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/pulls
+
+!Voz
+!Viết lại rule ADS vì không tương thích với account mod
+!QC ở thread
+voz.vn##^div.message.message--post:has(pubtag.adsbypubpower)
+voz.vn##^div.block-container:has(pubtag.adsbypubpower)
+!Xóa gạch ngang khi dùng 2 rule trên
+voz.vn##^div.message--post.message:has-text(dablewidget)
+!Xóa rule abpvn bị lỗi với account mod
+voz.vn#@#div.message--post
+voz.vn#@#.v-element>.v-responsive
+!Ngắt kết nối vào dữ liệu ảnh không cần thiết
+||data.voz.vn^$image
+@@||data.voz.vn/avatars^$image
+@@||data.voz.vn/styles^$image
+@@||data.voz.vn/attachments^$image
+@@||data.voz.vn/profile_banners^$image
+!Ngắt kết nối với domain qc, tracking
+||isvn.space$domain=voz.vn
+||adbro.me$domain=voz.vn
+||pubpowerplatform.io$domain=voz.vn
+||aj1559.online$domain=voz.vn
+||google-analytics.com$domain=voz.vn
+||cloudflareinsights.com$domain=voz.vn
+||googletagmanager.com$domain=voz.vn
+||voz.vn/jc/*
+||voz.vn/js/siropu/*
+voz.vn##^.adsbypubpower
+!Xóa redirect link
+||accesstrade.vn$domain=voz.vn
+voz.vn##a[data-proxy-href]:remove-attr(data-proxy-href)
+
+!gocmod.com
+!Làm phiền
+gocmod.com##.downline-line-list > center
+gocmod.com##.wrp-min > center
+file.gocmod.com##:has-text(Hãy nhấn vào quảng cáo)
+!Click download
+gocmod.com##+js(trusted-click-element, .download-btn-group .download-btn .btn.btn-icon.s-button.btn-lg.btn-block)
+file.gocmod.com##+js(trusted-click-element, .download-type form button.btn.btn-secondary.btn-md.radius.w-100.fw-500, ,1000)
+file.gocmod.com##+js(nano-sib)
+file.gocmod.com##+js(trusted-click-element, button.btn.btn-secondary.btn-md.fw-500, ,4000)
+file.gocmod.com##+js(trusted-click-element, .btn.btn-secondary.btn-md.fw-500, ,2000)
+!Chặn popup shopee
+file.gocmod.com##^script:has-text(shopee)
+||cdn.statically.io^$domain=gocmod.com
+
+!Xamvn
+!Xóa Quảng cáo bán account
+/^.*?xamvn.*?$/##.js-inlineModContainer.structItem--thread.structItem:has-text(/Bán 𝗔𝗰𝗰|Kho 𝗔𝗰𝗰/)
+/^.*?xamvn.*?$/##.js-inlineModContainer.js-post.message--post.message:has(.bbWrapper:has-text(/Bán Acc|Acc có chức năng Search/))
+/^.*?xamvn.*?$/##.node-extra:has-text(/Bán 𝗔𝗰𝗰|Kho 𝗔𝗰𝗰/):style(visibility: hidden !important)
+
+!newscon
+newscon.org,newscon.net##.adblock-warning.overlay--light.overlay
+newscon.org,newscon.net###u-flex
+newscon.org,newscon.net###adsplus
+newscon.org,newscon.net##.js-carouselInner.u-flexTop
+newscon.org,newscon.net###arc-broker
+||www.newscon.org/static/CACHE/js/output*.js
+||bachelornation.com^$domain=newscon.org|newscon.net
+||ew.com^$domain=newscon.org|newscon.net
+||soaps.sheknows.com^$domain=newscon.org|newscon.net
+||1news.co.nz^$domain=newscon.org|newscon.net
+||comicbook.com^$domain=newscon.org|newscon.net
