@@ -1,7 +1,7 @@
 ! Title: Fioren's List
 ! Description: Personal uBlock Origin List
 ! Expires: 12 hours
-! Last modified: 2025.02.01.1
+! Last modified: 2025.02.01.2
 ! Homepage: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules
 ! License: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/blob/main/LICENSE
 !
@@ -72,3 +72,27 @@ newscon.org,newscon.net###arc-broker
 ||soaps.sheknows.com^$domain=newscon.org|newscon.net
 ||1news.co.nz^$domain=newscon.org|newscon.net
 ||comicbook.com^$domain=newscon.org|newscon.net
+
+!animevietsub
+/^.*?animevietsub.*?$/##.announcement
+/^.*?animevietsub.*?$/##.schedule-title-main
+/^.*?animevietsub.*?$/##.alert-info.alert
+/^.*?animevietsub.*?$/##section.Wdgt:nth-of-type(3)
+/^.*?animevietsub.*?$/##section.Wdgt:nth-of-type(2)
+/^.*?animevietsub.*?$/##section.Wdgt:nth-of-type(1)
+/^.*?animevietsub.*?$/##.notif-300
+/^.*?animevietsub.*?$/##.Footer
+/^.*?animevietsub.*?$/##.tag-list-main
+/^.*?animevietsub.*?$/###mv-keywords
+/^.*?animevietsub.*?$/##.title.fbcmt
+/^.*?animevietsub.*?$/###comments > span
+/^.*?animevietsub.*?$/##.History-notif
+/^.*?animevietsub.*?$/##.social-button
+/^.*?animevietsub.*?$/##section > .Top
+||lh3.googleusercontent.com/*=s0$image,domain=/^.*animevietsub.*?$/
+/^.*?animevietsub.*?$/##.ad-center-header.Adv
+/^.*?animevietsub.*?$/###invideo_wrapper
+/^.*?animevietsub.*?$/##.Ads
+/^.*?animevietsub.*?$/##.mobile-catfixx
+/^.*?animevietsub.*?$/##.pc-catfixx
+/^.*?animevietsub.*?$/##+js(acs, eval, $._Eu)
