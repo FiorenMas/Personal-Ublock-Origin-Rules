@@ -1,7 +1,7 @@
 ! Title: Fioren's List
 ! Description: Personal uBlock Origin List
 ! Expires: 12 hours
-! Last modified: 2025.02.01.2
+! Last modified: 2025.02.03.1
 ! Homepage: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules
 ! License: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/blob/main/LICENSE
 !
