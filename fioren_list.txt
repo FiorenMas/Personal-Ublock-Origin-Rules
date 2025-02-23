@@ -39,6 +39,14 @@ voz.vn##^.adsbypubpower
 ||accesstrade.vn$domain=voz.vn
 voz.vn##a[data-proxy-href]:remove-attr(data-proxy-href)
 
+! Chặn google search dịch kết quả tìm kiếm
+! https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-chromium.682181/post-35907919
+www.google.com##.Pa9Ggf:not([style="display:none"])
+www.google.com##.Pa9Ggf[style="display:none"]:style(display: block !important;)
+www.google.com##a[jsname="UWckNb"][data-tli][href^="https://translate.google.com/translate?"]
+www.google.com##a[jsname="UWckNb"][data-tli][style="display:none"]:style(display: block !important;)
+www.google.com##div[jscontroller="Vxh2ib"]
+
 !gocmod.com
 !Làm phiền
 gocmod.com##.downline-line-list > center
