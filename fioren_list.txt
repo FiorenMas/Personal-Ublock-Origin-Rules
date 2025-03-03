@@ -81,9 +81,6 @@ newscon.org,newscon.net###arc-broker
 ||1news.co.nz^$domain=newscon.org|newscon.net
 ||comicbook.com^$domain=newscon.org|newscon.net
 
-!Chặn ads trong video phimapi (và các site dùng chung api)
-streamc.xyz,vip.opstream10.com,vip.opstream11.com,vip.opstream11.com,vip.opstream12.com,vip.opstream13.com,vip.opstream14.com,vip.opstream15.com,vip.opstream16.com,vip.opstream17.com,kkphim.com,phim.nguonc.com,ophim17.cc,kkphim.vip,kkphim1.com,player.phimapi.com##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)
-
 !animevietsub
 /^.*?animevietsub.*?$/##.announcement
 /^.*?animevietsub.*?$/##.schedule-title-main
