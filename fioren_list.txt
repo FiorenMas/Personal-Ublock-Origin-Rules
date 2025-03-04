@@ -62,6 +62,11 @@ file.gocmod.com##+js(trusted-click-element, .btn.btn-secondary.btn-md.fw-500, ,2
 file.gocmod.com##^script:has-text(shopee)
 ||cdn.statically.io^$domain=gocmod.com
 
+!Phim api
+!https://github.com/Hth4nh/PureMovies/blob/main/PureMovies.user.js
+kkphim.com,phim.nguonc.com,ophim17.cc,player.phimapi.com,/.*\.streamc\.xyz/,vip.opstream10.com,vip.opstream11.com,vip.opstream12.com,vip.opstream13.com,vip.opstream14.com,vip.opstream15.com,vip.opstream16.com,vip.opstream17.com,kkphim.vip,kkphim1.com,img.phimapi.com,216.180.226.222##+js(trusted-replace-xhr-response, '/(?<!#EXT-X-DISCONTINUITY[\s\S]*)#EXT-X-DISCONTINUITY\n(?:.*?\n){20}#EXT-X-DISCONTINUITY\n(?![\s\S]*#EXT-X-DISCONTINUITY)/g', mixed.m3u8)
+kkphim.com,phim.nguonc.com,ophim17.cc,player.phimapi.com,/.*\.streamc\.xyz/,vip.opstream10.com,vip.opstream11.com,vip.opstream12.com,vip.opstream13.com,vip.opstream14.com,vip.opstream15.com,vip.opstream16.com,vip.opstream17.com,kkphim.vip,kkphim1.com,img.phimapi.com,216.180.226.222##+js(trusted-replace-xhr-response, '/#EXT-X-DISCONTINUITY\n(?:#EXTINF:(?:2.00|3.80|1.76|2.00|2.16|1.64|1.68|1.52|1.84)0000,\n.*\n){9}(?=#EXT-X-DISCONTINUITY)/g', mixed.m3u8)
+
 !Xamvn
 !Xóa Quảng cáo bán account
 /^.*?xamvn.*?$/##.js-inlineModContainer.structItem--thread.structItem:has-text(/Bán 𝗔𝗰𝗰|Kho 𝗔𝗰𝗰/)
