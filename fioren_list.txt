@@ -15,6 +15,7 @@ voz.vn##^div.message.message--post:has(pubtag.adsbypubpower)
 voz.vn##^div.block-container:has(pubtag.adsbypubpower)
 !Thread QC tạo bởi user:
 voz.vn##.structItem.structItem--thread:has(.structItem-parts):has-text(/vozNews|Kisuf|vozOfficial/i)
+voz.vn##.node-extra:has-text(/vozNews|Kisuf|vozOfficial/i):style(visibility: hidden !important)
 !Xóa gạch ngang khi dùng 2 rule trên
 voz.vn##^div.message--post.message:has-text(dablewidget)
 !Xóa rule abpvn bị lỗi với account mod
