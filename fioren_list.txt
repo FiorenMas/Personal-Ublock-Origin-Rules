@@ -112,3 +112,8 @@ newscon.org,newscon.net###arc-broker
 /^.*?animevietsub.*?$/##.mobile-catfixx
 /^.*?animevietsub.*?$/##.pc-catfixx
 /^.*?animevietsub.*?$/##+js(acs, eval, $._Eu)
+
+!Trang nước ngoài
+vn.jrants.com##+js(aopr, exoJsPop101)
+foodtechnos.in##+js(set, adsBlocked, noopFunc)
+foodtechnos.in##+js(nano-sib)
