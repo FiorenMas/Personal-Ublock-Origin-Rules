@@ -1,7 +1,5 @@
 voz-quick-link.js text/javascript
 (function() {
-    'use strict';
-
     const buttons = [
         { name: 'F17', url: 'https://voz.vn/f/chuyen-tro-linh-tinh%E2%84%A2.17/' },
         { name: 'F33', url: 'https://voz.vn/f/%C4%90iem-bao.33/' },
