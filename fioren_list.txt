@@ -11,13 +11,11 @@
 !Voz
 !Viết lại rule ADS vì không tương thích với account mod
 !QC ở thread
-voz.vn##^div.message.message--post:has(pubtag.adsbypubpower)
-voz.vn##^div.block-container:has(pubtag.adsbypubpower)
+voz.vn##div.message--post.message:has-text(powerAPITag.display)
+voz.vn##+js(aopr, powerAPITag.display, noopFunc)
 !Thread QC tạo bởi user:
 voz.vn##.structItem.structItem--thread:has(.structItem-parts):has-text(/vozNews|Kisuf|vozOfficial/i)
 voz.vn##.node-extra:has-text(/vozNews|Kisuf|vozOfficial/i):style(visibility: hidden !important)
-!Xóa gạch ngang khi dùng 2 rule trên
-voz.vn##^div.message--post.message:has-text(dablewidget)
 !Xóa rule abpvn bị lỗi với account mod
 voz.vn#@#div.message--post
 voz.vn#@#.v-element>.v-responsive
