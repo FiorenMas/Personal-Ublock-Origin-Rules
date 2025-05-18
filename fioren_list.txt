@@ -12,6 +12,7 @@
 !Viết lại rule ADS vì không tương thích với account mod
 !QC ở thread
 voz.vn##^div.message--post.message:has-text(powerAPITag.display)
+voz.vn##^div.message--post.message:has-text(static.dable.io/dist)
 voz.vn##+js(aopr, powerAPITag.display, noopFunc)
 !Thread QC tạo bởi user:
 voz.vn##.structItem.structItem--thread:has(.structItem-parts):has-text(/vozNews|Kisuf|vozOfficial/i)
