@@ -1,7 +1,7 @@
 ! Title: Fioren's List
 ! Description: Personal uBlock Origin List
 ! Expires: 12 hours
-! Last modified: 2025.05.17.1
+! Last modified: 2025.06.16.1
 ! Homepage: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules
 ! License: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/blob/main/LICENSE
 !
@@ -111,3 +111,12 @@ newscon.org,newscon.net###arc-broker
 vn.jrants.com##+js(aopr, exoJsPop101)
 foodtechnos.in##+js(set, adsBlocked, noopFunc)
 foodtechnos.in##+js(nano-sib)
+
+!Xóa bản dịch reddit
+||reddit.com^$removeparam=tl
+
+!Bypass adult check
+www.javbus.com##+js(set-cookie, dv, 1)
+www.javbus.com##+js(set-cookie, age, verified)
+www.javbus.com##+js(set-cookie, existmag, mag)
+www.javbus.com##+js(cookie-remover, "**VMInitInjection**")
