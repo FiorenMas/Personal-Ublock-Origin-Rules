@@ -1,7 +1,7 @@
 ! Title: Fioren's List
 ! Description: Personal uBlock Origin List
 ! Expires: 12 hours
-! Last modified: 2025.06.16.1
+! Last modified: 2026.11.1.1
 ! Homepage: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules
 ! License: https://github.com/FiorenMas/Personal-Ublock-Origin-Rules/blob/main/LICENSE
 !
@@ -36,6 +36,7 @@ voz.vn#@#.v-element>.v-responsive
 ||googletagmanager.com$domain=voz.vn
 ||voz.vn/jc/*
 ||voz.vn/js/siropu/*
+||voz.vn/xfmg.php^
 voz.vn##^.adsbypubpower
 !Xóa redirect link
 ||accesstrade.vn$domain=voz.vn
